@@ -1,0 +1,100 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        02/14/2018  22:10:50  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE switch_led.obj, push_button.obj TO switch_led
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  switch_led.obj (SWITCH_LED)
+  push_button.obj (PUSH_BUTTON)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  switch_led (SWITCH_LED)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     000DH     UNIT         ?PR?MAIN?PUSH_BUTTON
+            CODE    0010H     000CH     UNIT         ?C_C51STARTUP
+            CODE    001CH     000BH     UNIT         ?PR?MAIN?SWITCH_LED
+
+
+
+OVERLAY MAP OF MODULE:   switch_led (SWITCH_LED)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?SWITCH_LED
+
+
+
+IGNORED SYMBOLS:
+   MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  switch_led (SWITCH_LED)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SWITCH_LED
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:001CH         PUBLIC        main
+  B:0090H.0       PUBLIC        SW
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/14/2018  22:10:50  PAGE 2
+
+
+  B:00A0H.0       PUBLIC        LED
+  -------         PROC          MAIN
+  C:001CH         LINE#         6
+  C:001CH         LINE#         8
+  C:001EH         LINE#         9
+  C:0020H         LINE#         11
+  C:0020H         LINE#         13
+  C:0025H         LINE#         14
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        SWITCH_LED
+
+  -------         MODULE        PUSH_BUTTON
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  C:0003H         PUBLIC        main
+  -------         PROC          MAIN
+  C:0003H         LINE#         3
+  C:0003H         LINE#         5
+  C:0006H         LINE#         7
+  C:0006H         LINE#         8
+  C:000BH         LINE#         9
+  C:000EH         LINE#         10
+  C:000EH         LINE#         11
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PUSH_BUTTON
+
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  push_button.obj (PUSH_BUTTON)
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?PUSH_BUTTON
+
+Program Size: data=9.0 xdata=0 code=39
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  1 ERROR(S)

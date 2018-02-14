@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\zebo\Desktop\led_blink\switch_led\switch_led.uvproj
+Project File Date:  02/14/2018
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling switch_led.c...
+compiling push_button.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  push_button.obj (PUSH_BUTTON)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?PUSH_BUTTON
+Program Size: data=9.0 xdata=0 code=39
+Target not created
+Build target 'Target 1'
+compiling switch_led.c...
+compiling push_button.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  push_button.obj (PUSH_BUTTON)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?PUSH_BUTTON
+Program Size: data=9.0 xdata=0 code=39
+Target not created
+Build target 'Target 1'
+compiling switch_led.c...
+compiling push_button.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  push_button.obj (PUSH_BUTTON)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?PUSH_BUTTON
+Program Size: data=9.0 xdata=0 code=39
+Target not created
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  MAIN
+    MODULE:  push_button.obj (PUSH_BUTTON)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?PUSH_BUTTON
+Program Size: data=9.0 xdata=0 code=39
+Target not created
